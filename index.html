@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    <title>All Universe</title>
+
+</head>
+
+<body onload="fetchAICards()">
+    <div class="container mx-auto text-center py-10">
+        <h2 class="text-4xl font-bold pb-5 ">AI Universe Hub</h2>
+        <button id="soartDataButton" class="text-sm px-4 py-2 bg-[#EB5757] text-white rounded-lg">Sort By Date</button>
+    </div>
+    <div class="container mx-auto">
+        <div id="cardForHtml" class="grid md:grid-cols-3 grid-cols-1 gap-3">
+            <h1 class="text-gray-600 text-center">No Data Found</h1>
+        </div>
+    </div>
+    <div class="text-center py-10">
+        <button id="sliceButton" class="text-sm px-4 py-2 bg-[#EB5757] text-white rounded-lg">See More</button>
+    </div>
+    <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+    <div id="modal" class="modal">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
